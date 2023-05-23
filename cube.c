@@ -3,7 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 
-flaot A,B,C;
+float A,B,C;
 
 float cubeWidth = 20;
 int wifth =  160, height = 44;
@@ -14,7 +14,7 @@ int distanceFromCam = 100;
 float horizontalOffset;
 float K1 = 40;
 
-flaot incremenSpeed = 0.6;
+float incremenSpeed = 0.6;
 
 float x, y, z;
 float ozz;
@@ -78,7 +78,7 @@ cubeWidth = 10;
 horizontalOffset = 1 * cubeWidth
 // segundo cubo 
 for (float cubeX = -cubeWidth; cubeX < cubeWidth; cubeX += incremenSpeed) {
-    for (float cubeY = -cubeWidth; cubeY < cubeWidth;
+    for (flaot cubeY = -cubeWidth; cubeY < cubeWidth;
     cubeY += incrementSpeed) {
 calculateForSurface(cubeX, cubeY, -cubeWidth, '@');
 calculateForSurface(cubeWidth, cubeY, cubeX, '$');
